@@ -1,0 +1,384 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-phone-sans-bold/css/bpg-phone-sans-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mkhedruli-bold/css/bpg-nino-mkhedruli-bold.min.css");
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #c4c4c4;
+   
+   
+  }
+  
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  }
+  
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  z-index: 2;
+    position: fixed;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  
+  .hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+  }
+
+  .menu-bar img{
+    position: relative;
+    left: -50px;
+    object-fit: cover;
+    opacity: 0.5s;
+  }
+
+  
+
+  .main h1{
+ 
+    position: relative;
+   top: -550px;
+  color: #f5f5f5;
+  z-index: -1px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+  }
+
+  .card {
+   
+  position: relative;
+ top: -660px;
+
+    transition: all 0.4s;
+  
+  
+    font-weight: 900;
+   
+  }
+
+  .card img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+  }
+  
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 29.1ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2.3em;
+    position: relative;
+    top: -100%;
+    color: #e9e9e9;
+    font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+  }
+
+  svg{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-90deg);
+    left: 720px;
+    top: -1580px;
+    cursor: pointer;
+    animation-name: luka;
+  }
+
+  svg:hover{
+    transform: scale(1.2);
+   transform: rotate(270deg);
+    transition: 0.5s;
+   
+  }
+
+  footer{
+    position: relative;
+    background-color: rgba(222, 231, 231, 0.234);
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  footer iframe{
+    position: relative;
+    width: 300px;
+    height: 80px;
+   top: 10px;
+  }
+
+  footer span{
+    position: relative;
+   left: 65%;
+   top: -40px;
+   letter-spacing: 5px;
+   font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+  }
+
+
+.phonenumber{
+  position: relative;
+  left: 180px;
+  font-weight: 900;
+  top: -40px;
+  letter-spacing: 5px;
+  font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+}
+
+.about h1{
+  position: relative;
+  top: -1250px;
+  text-align: center;
+
+}
+
+.card1, .card2, .card3{
+  width: 250px;
+  height: 230px;
+
+  position: relative;
+  top: -1150px;
+  margin: 10px;
+  left: 25%;
+  display: inline-block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+overflow: hidden;
+}
+
+.card1 p{
+  font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-size: 1.3rem;
+}
+
+.card2 p{
+  font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-size: 1.3rem;
+}
+
+
+.card3 p{
+  font-family: "BPG Nino Mkhedruli Bold", sans-serif;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-size: 1.3rem;
+}
+
+
+.container {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+  position: relative;
+  top: -1050px;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.container h1 {
+	display: block;
+  position: relative;
+  text-align: center;
+  padding: 50px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
